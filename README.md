@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# MixPlay 🎵
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MixPlay is a web application that allows users to create custom playlists by mixing audio from multiple YouTube videos. You can adjust the volume of each track individually, creating a unique and enjoyable listening experience.
 
-## Available Scripts
+[Live App](https://mix-play.vercel.app/)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/HimanshuMohanty-Git24/MixPlay/assets/94133298/7e0c3de7-a419-4456-b6b3-bcfd12f2f720)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Motivation 💡
 
-### `npm test`
+While doing focused work, I enjoy playing the Bhagavad Gita and study music instrumental simultaneously. This inspired me to create MixPlay, so others can also enjoy mixing their favorite tracks while working or relaxing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features ✨
 
-### `npm run build`
+- 📺 Add multiple YouTube tracks to your playlist
+- 🎚️ Adjust volume for each track independently
+- ⏯️ Play/pause functionality for the entire playlist
+- 📝 Display track titles fetched from YouTube
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack 🛠️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+- ⚛️ React.js
+- 🎨 Material-UI for styling and components
+- 🪝 Custom hooks for YouTube audio handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend
+- 🟢 Node.js
+- 🚀 Express.js for the server
+- 📹 ytdl-core for YouTube video processing
 
-### `npm run eject`
+### APIs
+- 🎥 YouTube Data API (via ytdl-core)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How It Works ⚙️
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Input YouTube URLs:** Users input YouTube video URLs.
+2. **Fetch Audio Info:** The backend fetches audio information and URLs using ytdl-core.
+3. **Display Tracks:** The frontend displays track information and provides playback controls.
+4. **Adjust Volume:** Users can adjust volume levels for each track in real-time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+MixPlay demonstrates the power of combining frontend and backend technologies to create a seamless audio mixing experience directly in the browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment 🚀
 
-## Learn More
+- Backend: [Render](https://render.com/)
+- Frontend: [Vercel](https://vercel.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure 📂
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+mixplay/
+├── backend/
+│   ├── package.json
+│   └── server.js
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── AudioPlayer.js
+│   │   ├── Header.js
+│   │   ├── TrackInput.js
+│   │   └── TrackList.js
+│   ├── hooks/
+│   │   └── useYoutubeAudio.js
+│   ├── App.js
+│   ├── index.js
+│   └── theme.js
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## Getting Started 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
 
-### Analyzing the Bundle Size
+- Node.js
+- npm or yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Installation
 
-### Making a Progressive Web App
+1. Clone the repository
+    ```bash
+    git clone https://github.com/HimanshuMohanty-Git24/MixPlay.git
+    ```
+2. Navigate to the project directory
+    ```bash
+    cd MixPlay
+    ```
+3. Install dependencies
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Running the App
 
-### Advanced Configuration
+1. Start the backend server
+    ```bash
+    cd backend
+    npm start
+    ```
+2. Start the frontend
+    ```bash
+    cd ..
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Open your browser and go to `http://localhost:3000`
 
-### Deployment
+## Contributing 🤝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
-### `npm run build` fails to minify
+## License 📄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ by [Himanshu Mohanty](https://github.com/HimanshuMohanty-Git24)
