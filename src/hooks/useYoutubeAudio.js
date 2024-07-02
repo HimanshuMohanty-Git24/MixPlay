@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 
-const API_URL = 'http://localhost:3001/get-audio-url';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/get-audio-url';;
 
 const useYoutubeAudio = () => {
   const [error, setError] = useState(null);
