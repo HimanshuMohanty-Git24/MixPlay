@@ -8,9 +8,9 @@
     ],
     "routes": [
       { "src": "/static/(.*)", "dest": "/static/$1" },
-      { "src": "/favicon.ico", "dest": "/favicon.ico" },
+      { "src": "/favicon.png", "dest": "/favicon.png" },
       { "src": "/manifest.json", "dest": "/manifest.json" },
-      { "src": "/logo192.png", "dest": "/logo192.png" },
+      { "src": "/favicon.png", "dest": "/favicon.png" },
       { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
