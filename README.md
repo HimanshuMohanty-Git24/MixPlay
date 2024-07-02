@@ -2,7 +2,7 @@
 
 MixPlay is a web application that allows users to create custom playlists by mixing audio from multiple YouTube videos. You can adjust the volume of each track individually, creating a unique and enjoyable listening experience.
 
-[Live App](https://mix-play.vercel.app/)
+[Live App](https://mix-play.vercel.app/) *Note:Sometimes may not work Due to using free tire of Render for the backend so better setup Locally 
 
 
 
